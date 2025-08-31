@@ -1,56 +1,67 @@
-IEEE I2ITCON2026 Conference Website
+# IEEE I2ITCON2026 Conference Website
+
 This is a React-based website for the 2nd IEEE International Conference on Information, Implementation and Innovation in Technology (IEEE I2ITCON2026).
 
-Overview
+## Overview
+
 This project provides a responsive and user-friendly interface for conference attendees, speakers, and authors. It includes information about the conference theme, dates, call for papers, registration details, author guidelines, schedule, committee, and contact information.
 
-Getting Started
+## Getting Started
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
-Node.js (version 14.0.0 or higher)
+### Prerequisites
 
-npm (or yarn)
+- Node.js (version 14.0.0 or higher)
+- npm (or yarn)
 
-Installation
-Clone the repository:
+### Installation
 
-Bash
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chinmayjoshi03/ieee-website.git
+   ```
 
-git clone https://github.com/chinmayjoshi03/ieee-website.git
-Navigate to the project directory:
+2. Navigate to the project directory:
+   ```bash
+   cd ieee-website
+   ```
 
-Bash
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-cd ieee-website
-Install the dependencies:
+## Available Scripts
 
-Bash
-
-npm install
-Available Scripts
 In the project directory, you can run:
 
-npm start
+### `npm start`
+
 Runs the app in development mode.
-Open http://localhost:3000 to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-npm test
+### `npm test`
+
 Launches the test runner in interactive watch mode.
 
-npm run build
-Builds the app for production to the build folder.
+### `npm run build`
+
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-npm run eject
-Note: this is a one-way operation. Once you eject, you can’t go back!
+### `npm run eject`
 
-If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Project Structure
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+## Project Structure
+
+```
 ieee-website/
 ├── public/
 │   ├── favicon.ico
@@ -81,9 +92,11 @@ ieee-website/
 ├── package.json
 ├── README.md
 └── tsconfig.json
-Learn More
+```
+
+## Learn More
+
 To learn more about the technologies used in this project, see the following resources:
 
-React Documentation
-
-Create React App Documentation
+- [React Documentation](https://reactjs.org/)
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started/)
