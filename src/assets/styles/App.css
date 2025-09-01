@@ -16,6 +16,23 @@ body {
   padding: 1rem;
 }
 
+.nav-list .active-link {
+  background: linear-gradient(135deg, #3182ce, #63b3ed); /* gradient blue */
+  color: #fff; /* white text */
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(49, 130, 206, 0.4);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.nav-list .active-link:hover {
+  background: linear-gradient(135deg, #2b6cb0, #4299e1); /* darker gradient */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(49, 130, 206, 0.5);
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -25,6 +42,7 @@ body {
 
 .nav-list li {
   position: relative;
+  list-style-type: none;
 }
 
 .nav-list a {
@@ -35,7 +53,9 @@ body {
 }
 
 .nav-list a:hover {
-  background-color: #003366;
+  background: linear-gradient(135deg, #2b6cb0, #4299e1); /* darker gradient */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(49, 130, 206, 0.5);
 }
 
 .dropdown {
@@ -57,36 +77,111 @@ body {
   padding: 0.5rem;
 }
 
+/* MarqueeBar*/
+
+.marquee-content a {
+  margin-left: 100px;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.marquee-content a:hover {
+  color: #004d99;
+}
+
 /* Landing Section Styles */
-.landing-section {
+.landing-section-upper {
+  background-image: url("https://cache.careers360.mobi/media/article_images/2024/8/7/i2it-pune-management-quota.jpg");
   text-align: center;
   padding: 2rem;
   background-color: #f4f4f4;
+  border-top: 2px solid black;
+  height: 400px;
 }
 
-.landing-section h1 {
+.landing-section-upper h1 {
   font-size: 2.5rem;
-  color: #004d99;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
   margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.landing-section p {
+.landing-section-upper p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.countdown {
+.landing-section-lower {
+  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #e0f2f7, #b2d8e6);
+  color: #fff;
+}
+
+/* Styles for the left box containing the date */
+.landing-section-lower-left-box {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.landing-section-lower-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  color: #36454f;
+}
+
+.landing-section-lower-body {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: black;
+}
+
+/* Styles for the right box containing the countdown */
+.countdown {
+  margin-right: 100px;
+  display: flex;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .countdown span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #004d99;
-  color: white;
-  padding: 0.5rem 1rem;
+  color: #fff;
+  padding: 1rem;
   border-radius: 5px;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.countdown span:hover {
+  transform: translateY(-5px);
+  background-color: #0000ff;
+}
+
+.countdown span::before {
+  content: attr(data-value);
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.countdown span::after {
+  content: attr(data-label);
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 /* Footer Styles */
@@ -95,7 +190,6 @@ body {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
   width: 100%;
   bottom: 0;
 }
