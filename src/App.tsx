@@ -41,7 +41,10 @@ const App = () => {
         },
         {
           path: "about-us",
-          element: <AboutUs />,
+          element:(<>
+            <MarqueeBar />,
+            <AboutUs />,
+          </>) 
         },
       ],
     },
