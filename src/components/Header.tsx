@@ -1,12 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
     <header className="header">
       <nav>
         <ul className="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li><NavLink
+              to="/about-us"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              About Us
+            </NavLink></li>
           <li><a href="#speakers">Speakers</a></li>
           <li>
             <a href="#call-for-papers">Call for Papers</a>

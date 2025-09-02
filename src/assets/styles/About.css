@@ -1,0 +1,111 @@
+  .grid-container {
+  margin-left:20px;
+  margin-right:20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  background-color: #004d99;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.chair-section {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.chair-section:hover {
+  background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+.chair-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chair-section p strong {
+  color: #004d99;
+}
+
+.right-panel {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-left: 1px solid #e0e0e0;
+}
+
+.right-panel h2 {
+  margin-top:20px;
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.date-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.date-box {
+  background-color: #004d99;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.date-box span:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.date-box span:last-child {
+  font-size: 1rem;
+  display: block;
+}
+
+.date-details {
+  padding-top: 0.2rem;
+}
+
+.date-details div:first-child {
+  font-weight: bold;
+}
+
+.date-details div:last-child {
+  color: #666;
+}
