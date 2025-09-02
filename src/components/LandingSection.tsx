@@ -33,20 +33,34 @@ const LandingSection: React.FC = () => {
       <div className="landing-section-upper">
         <h1>
           2nd IEEE International Conference on Information, Implementation and
-          Innovation in Technology (IEEE I2ITCON2026)
+          Innovation in Technology
         </h1>
+        <p className="conference-subtitle">
+          Driving Innovation • Shaping the Future • Connecting Minds
+        </p>
+        <p className="conference-subtitle" style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+          July 10-11, 2026 | Pune, India
+        </p>
+        <a href="#about" className="cta-button">
+          Register Now
+        </a>
       </div>
 
-      <section className="landing-section-lower" style={{ fontSize: '1.2em' }}>
+      <section className="landing-section-lower">
         <div className="landing-section-lower-left-box">
-          <div className="landing-section-lower-heading">Conference Date</div>
+          <div className="landing-section-lower-heading">Conference Dates</div>
           <div className="landing-section-lower-body">
             10th & 11th July 2026
           </div>
+          <p style={{ fontSize: '1.1rem', marginTop: '1rem', opacity: 0.9 }}>
+            Join us for two days of cutting-edge research and innovation
+          </p>
         </div>
         <div className="countdown">
           {countdown.expired ? (
-            <span>Conference is Live!</span>
+            <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>
+              Conference is Live!
+            </div>
           ) : (
             <>
               <div>
