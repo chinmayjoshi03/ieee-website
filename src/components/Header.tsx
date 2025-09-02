@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ieeeLogo from '../assets/ieee.png'; // Ensure the path is correct
 
 const Header: React.FC = () => {
   return (
@@ -7,13 +8,12 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo-container">
           <img 
-            src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
+            src={ieeeLogo}
             alt="IEEE Logo" 
             className="logo"
           />
-          <div className="logo-text">IEEE I2ITCON 2026</div>
+     
         </div>
-        
         <nav>
           <ul className="nav-list">
             <li>
@@ -34,11 +34,16 @@ const Header: React.FC = () => {
             </li>
             <li><a href="#speakers">Speakers</a></li>
             <li>
-              <a href="#call-for-papers">Call for Papers</a>
+              <NavLink
+                to="/call-for-papers"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Call for Papers
+              </NavLink>
               <ul className="dropdown">
-                <li><a href="#call-for-papers">Submission Guidelines</a></li>
+                <li><a href="#submission-guidelines">Submission Guidelines</a></li>
                 <li><a href="#registration-details">Registration Details</a></li>
-                <li><a href="#registration-guidelines">Important Dates</a></li>
+                <li><a href="#important-dates">Important Dates</a></li>
               </ul>
             </li>
             <li>

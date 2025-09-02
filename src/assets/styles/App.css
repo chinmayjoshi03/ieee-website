@@ -26,24 +26,26 @@ body {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
   height: 80px;
+  position: relative;
 }
 
 .logo-container {
+  position: absolute;
+  left: 2rem;
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
 .logo {
-  width: 55px;
-  height: 55px;
-  border-radius: 8px;
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -51,14 +53,6 @@ body {
 
 .logo:hover {
   transform: scale(1.05);
-}
-
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  letter-spacing: -0.5px;
 }
 
 .nav-list {
@@ -403,6 +397,17 @@ body {
     gap: 1rem;
     height: auto;
     padding: 1rem 2rem;
+    justify-content: center;
+  }
+  
+  .logo-container {
+    position: static;
+    order: -1;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
   }
   
   .nav-list {
@@ -437,10 +442,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .logo-text {
-    font-size: 1.2rem;
-  }
-  
   .nav-list {
     flex-direction: column;
     gap: 0.5rem;

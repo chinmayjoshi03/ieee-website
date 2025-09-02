@@ -9,19 +9,7 @@ import About from "./components/About";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import AboutUs from "./Pages/AboutUs";
-
-// const App: React.FC = () => {
-//   return (
-//     <div className="app">
-//       <Header />
-//       <MarqueeBar/>
-//       <LandingSection />
-//       <About/>
-//       <Footer />
-//     </div>
-//   );
-// };
-
+import CallForPapers from "./components/CallForPapers";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -41,10 +29,21 @@ const App = () => {
         },
         {
           path: "about-us",
-          element:(<>
-            <MarqueeBar />,
-            <AboutUs />,
-          </>) 
+          element: (
+            <>
+              <MarqueeBar />
+              <AboutUs />
+            </>
+          ) 
+        },
+        {
+          path: "call-for-papers",
+          element: (
+            <>
+              <MarqueeBar />
+              <CallForPapers />
+            </>
+          ) 
         },
       ],
     },
@@ -54,5 +53,3 @@ const App = () => {
 };
 
 export default App;
-
-
