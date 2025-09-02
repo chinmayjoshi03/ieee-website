@@ -36,9 +36,9 @@ const LandingSection: React.FC = () => {
           Innovation in Technology
         </h1>
         <p className="conference-subtitle">
-          Driving Innovation • Shaping the Future • Connecting Minds
+          Advancing Technology • Fostering Innovation • Building Tomorrow
         </p>
-        <p className="conference-subtitle" style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+        <p className="conference-subtitle" style={{ fontSize: '1.2rem', marginBottom: '3rem', fontWeight: '500' }}>
           July 10-11, 2026 | Pune, India
         </p>
         <a href="#about" className="cta-button">
@@ -52,8 +52,8 @@ const LandingSection: React.FC = () => {
           <div className="landing-section-lower-body">
             10th & 11th July 2026
           </div>
-          <p style={{ fontSize: '1.1rem', marginTop: '1rem', opacity: 0.9 }}>
-            Join us for two days of cutting-edge research and innovation
+          <p style={{ fontSize: '1.2rem', marginTop: '1.5rem', opacity: 0.9, fontWeight: '400' }}>
+            Join leading researchers and industry experts for two days of cutting-edge presentations and networking
           </p>
         </div>
         <div className="countdown">
