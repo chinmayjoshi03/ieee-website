@@ -1,125 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IEEE Student Branch</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    /* Frosted Glass Effect */
-    .glass-card {
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    .glass-navbar {
-      background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .glass-btn {
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      transition: all 0.3s ease;
-    }
-    .glass-btn:hover {
-      background: rgba(255, 255, 255, 0.7);
-      transform: translateY(-2px);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE I2ITCON2026 - International Conference on Information, Implementation and Innovation in Technology
+    </title>
+    <meta name="description"
+        content="2nd IEEE International Conference on Information, Implementation and Innovation in Technology - July 10-11, 2026, Pune, India">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="manifest" href="public/manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans text-gray-800 bg-[#e0f7ff]">
 
-  <!-- Navbar -->
-  <nav class="glass-navbar flex justify-between items-center p-4 fixed w-full top-0 z-50 shadow-md">
-    <div class="text-xl font-bold text-[#0288d1]" data-aos="fade-right">IEEE</div>
-    <ul class="flex gap-6 text-gray-700 font-medium" data-aos="fade-left">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="src/assets/download.png" alt="IEEE Logo" class="logo">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about-page" class="nav-link">About</a></li>
+                    <li><a href="#speakers" class="nav-link">Speakers</a></li>
+                    <li class="dropdown-parent">
+                        <a href="#call-for-papers" class="nav-link">Call for Papers</a>
+                        <ul class="dropdown">
+                            <li><a href="#submission-guidelines">Submission Guidelines</a></li>
+                            <li><a href="#registration-details">Registration Details</a></li>
+                            <li><a href="#important-dates">Important Dates</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-parent">
+                        <a href="#author-guidelines" class="nav-link">Authors</a>
+                        <ul class="dropdown">
+                            <li><a href="#review-process">Review Process</a></li>
+                            <li><a href="#plagiarism-policy">Plagiarism Policy</a></li>
+                            <li><a href="#copyright-policy">Copyright Policy</a></li>
+                            <li><a href="#camera-ready-info">Camera Ready</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                    <li><a href="#committee" class="nav-link">Committee</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-[#b3e5fc] to-[#81d4fa]">
-    <h1 class="text-5xl font-bold mb-6 text-[#01579b]" data-aos="zoom-in">Welcome to IEEE Student Branch</h1>
-    <p class="text-lg mb-6 max-w-2xl text-gray-700" data-aos="fade-up">Empowering students to innovate, learn, and lead in technology and engineering.</p>
-    <a href="#about" class="glass-btn px-6 py-3 text-[#0288d1] rounded-full font-semibold shadow-lg" data-aos="flip-up">Join Us</a>
-  </section>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Marquee Bar -->
+            <div class="marquee-bar">
+                <div class="marquee-content">
+                    <a href="#">🎯 Early Bird Registration Open - Save 30%</a>
+                    <a href="#">📝 Paper Submission Deadline: 31<sup>st</sup> December 2025</a>
+                    <a href="#">🏆 Best Paper Awards Available</a>
+                    <a href="#">🌟 Keynote Speakers Announced</a>
+                    <a href="#">📅 Workshop Registration Now Open</a>
+                    <a href="#">🎯 Early Bird Registration Open - Save 30%</a>
+                    <a href="#">📝 Paper Submission Deadline: 31<sup>st</sup> December 2025</a>
+                    <a href="#">🏆 Best Paper Awards Available</a>
+                    <a href="#">🌟 Keynote Speakers Announced</a>
+                    <a href="#">📅 Workshop Registration Now Open</a>
+                </div>
+            </div>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 px-6 text-center bg-white">
-    <h2 class="text-3xl font-bold mb-6 text-[#0288d1]" data-aos="fade-down">About Us</h2>
-    <p class="max-w-3xl mx-auto text-lg text-gray-700" data-aos="fade-up">IEEE Student Branch is a platform for tech enthusiasts to collaborate, innovate, and grow. We organize events, workshops, and competitions to foster technical skills and leadership.</p>
-  </section>
+            <!-- Landing Section -->
+            <div class="landing-section-upper">
+                <h1>2<sup>nd</sup> IEEE International Conference on Information, Implementation and Innovation in
+                    Technology</h1>
+                <p class="conference-subtitle">Advancing Technology • Fostering Innovation • Building Tomorrow</p>
+                <p class="conference-subtitle" style="font-size: 1.2rem; margin-bottom: 3rem; font-weight: 500;">July
+                    9<sup>th</sup>-11<sup>th</sup>, 2026 | Pune, India</p>
+                <a href="#about" class="cta-button">Register Now</a>
+            </div>
 
-  <!-- Events Section -->
-  <section id="events" class="py-20 px-6 bg-[#e0f7ff]">
-    <h2 class="text-3xl font-bold text-center mb-12 text-[#0288d1]" data-aos="fade-up">Our Events</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="glass-card rounded-xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-right">
-        <h3 class="text-xl font-semibold mb-2 text-[#01579b]">Tech Talk 2025</h3>
-        <p class="text-gray-700">Join us for insightful sessions with industry experts.</p>
-      </div>
-      <div class="glass-card rounded-xl p-6 shadow-lg hover:shadow-xl transition" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold mb-2 text-[#01579b]">Hackathon</h3>
-        <p class="text-gray-700">48-hour coding challenge to solve real-world problems.</p>
-      </div>
-      <div class="glass-card rounded-xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-left">
-        <h3 class="text-xl font-semibold mb-2 text-[#01579b]">Workshops</h3>
-        <p class="text-gray-700">Hands-on training sessions to learn emerging technologies.</p>
-      </div>
-    </div>
-  </section>
+            <section class="landing-section-lower">
+                <div class="landing-section-lower-left-box">
+                    <div class="landing-section-lower-heading">Conference Dates</div>
+                    <div class="landing-section-lower-body">9<sup>th</sup> to 11<sup>th</sup> July 2026</div>
+                    <p style="font-size: 1.2rem; margin-top: 1.5rem; opacity: 0.9; font-weight: 400;">Join leading
+                        researchers and industry experts for two days of cutting-edge presentations and networking</p>
+                </div>
+                <div class="countdown" id="countdown">
+                    <div>
+                        <span id="days">0</span>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <span id="hours">0</span>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <span id="minutes">0</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <span id="seconds">0</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </section>
 
-  <!-- Team Section -->
-  <section id="team" class="py-20 px-6 bg-white">
-    <h2 class="text-3xl font-bold text-center mb-12 text-[#0288d1]" data-aos="fade-up">Meet the Team</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="glass-card rounded-xl p-6 text-center shadow-lg" data-aos="flip-left">
-        <img src="https://via.placeholder.com/150" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-        <h3 class="text-lg font-semibold text-[#01579b]">John Doe</h3>
-        <p class="text-gray-700">Chairperson</p>
-      </div>
-      <div class="glass-card rounded-xl p-6 text-center shadow-lg" data-aos="flip-up">
-        <img src="https://via.placeholder.com/150" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-        <h3 class="text-lg font-semibold text-[#01579b]">Jane Smith</h3>
-        <p class="text-gray-700">Vice Chair</p>
-      </div>
-      <div class="glass-card rounded-xl p-6 text-center shadow-lg" data-aos="flip-right">
-        <img src="https://via.placeholder.com/150" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
-        <h3 class="text-lg font-semibold text-[#01579b]">Alex Lee</h3>
-        <p class="text-gray-700">Secretary</p>
-      </div>
-    </div>
-  </section>
+            <!-- About Section -->
+            <div class="grid-container">
+                <div class="left-panel">
+                    <div class="section">
+                        <h2>About I<sup>2</sup>IT</h2>
+                        <p>The International Conference on Information, Implementation and Innovation in Technology
+                            (I<sup>2</sup>IT) is a premier event bringing together researchers, engineers, and
+                            practitioners to share their latest findings and discuss future trends in the field of
+                            technology.</p>
+                        <a href="#venue-info" class="venue-link">Read More</a>
+                    </div>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-[#0288d1] text-white text-center py-6" data-aos="fade-up">
-    <p>&copy; 2025 IEEE Student Branch | All Rights Reserved</p>
-    <div class="flex justify-center gap-6 mt-4">
-      <a href="#">LinkedIn</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-    </div>
-  </footer>
+                    <div class="section">
+                        <h2>IEEE I<sup>2</sup>IT</h2>
+                        <p>2<sup>nd</sup> International Conference on Information, Implementation and Innovation in
+                            Technology 2026</p>
+                        <a href="#about-page">Read More</a>
+                    </div>
+                </div>
 
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
+                <div class="right-panel">
+                    <h2>IMPORTANT DATES</h2>
+                    <div class="date-item">
+                        <div class="date-box">
+                            <span>Dec</span>
+                            <span>31</span>
+                        </div>
+                        <div class="date-details">
+                            <div>31<sup>st</sup> December 2025</div>
+                            <div>Full Paper Submission</div>
+                        </div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date-box">
+                            <span>Feb</span>
+                            <span>27</span>
+                        </div>
+                        <div class="date-details">
+                            <div>27<sup>th</sup> February 2026</div>
+                            <div>Notification of Acceptance</div>
+                        </div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date-box">
+                            <span>May</span>
+                            <span>31</span>
+                        </div>
+                        <div class="date-details">
+                            <div>31<sup>st</sup> May 2026</div>
+                            <div>Early Bird Registration Deadline</div>
+                        </div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date-box">
+                            <span>June</span>
+                            <span>10</span>
+                        </div>
+                        <div class="date-details">
+                            <div>10<sup>th</sup> June 2026</div>
+                            <div>Last date of Registration and Payment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
+        <!-- About Us Page -->
+        <div id="about-page" class="page">
+            <!-- Marquee Bar -->
+            <div class="marquee-bar">
+                <div class="marquee-content">
+                    <a href="#">🎯 Early Bird Registration Open - Save 30%</a>
+                    <a href="#">📝 Paper Submission Deadline: 31<sup>st</sup> December 2025</a>
+                    <a href="#">🏆 Best Paper Awards Available</a>
+                    <a href="#">🌟 Keynote Speakers Announced</a>
+                    <a href="#">📅 Workshop Registration Now Open</a>
+                    <a href="#">🎯 Early Bird Registration Open - Save 30%</a>
+                    <a href="#">📝 Paper Submission Deadline: 31<sup>st</sup> December 2025</a>
+                    <a href="#">🏆 Best Paper Awards Available</a>
+                    <a href="#">🌟 Keynote Speakers Announced</a>
+                    <a href="#">📅 Workshop Registration Now Open</a>
+                </div>
+            </div>
+
+            <div class="about-container">
+                <header class="about-header">
+                    <h1 class="about-header-h1">About the Conference</h1>
+                </header>
+
+                <section class="about-content">
+                    <div class="about-text">
+                        <p class="about-text-p">
+                            The <strong>2<sup>nd</sup> IEEE International Conference on Information, Implementation and
+                                Innovation in Technology (IEEE I<sup>2</sup>ITCON2026)</strong> is a premier event that
+                            brings together leading researchers, engineers, and scientists from around the world. The
+                            conference provides a platform to share new findings, discuss future trends, and explore
+                            innovative solutions in the fields of information technology, control systems,
+                            communication, computing, and automation.
+                        </p>
+                        <p class="about-text-p">
+                            Our mission is to foster collaboration and knowledge exchange to address the challenges and
+                            opportunities presented by rapid technological advancements. Through keynotes, paper
+                            presentations, and workshops, we aim to drive a paradigm shift toward <strong>smart
+                                living</strong>, encompassing smart cities, intelligent transportation, automated homes,
+                            and sustainable industries.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQGCWG8aTrIoGw/feedshare-shrink_2048_1536/B4DZW_LhXvG8Ao-/0/1742669227121?e=1759363200&v=beta&t=phAfnYCfRGr3lt6zHEhkI9YCcGDIJdCLIyaLFtThiI8"
+                            alt="Conference Venue">
+                    </div>
+                </section>
+
+                <!-- Venue Information Section -->
+                <section id="venue-info" class="venue-section" style="display: none;">
+                    <div class="venue-content">
+                        <h2 class="venue-title">Venue - I<sup>2</sup>IT, Pune</h2>
+                        <div class="venue-details">
+                            <p class="venue-text">
+                                International Institute of Information Technology (I<sup>2</sup>IT), Pune [pronounced as
+                                I Square IT] was established by Late Shri. P. P. Chhabria, Founder Chairman of Finolex
+                                Group of Companies, a well-known philanthropist, and former President of Mahratta
+                                Chamber of Commerce, Industries and Agriculture (MCCIA). As a world-class academy that
+                                imparts high-end education in Engineering and Technology, the Institute has strived to
+                                meet the growing needs of the industry.
+                            </p>
+                            <p class="venue-text">
+                                Established on 10 acres of land, this Institute equips students with professional skills
+                                that allow them to take on real-time challenges in the areas of Information Technology,
+                                Engineering and other niche areas. I<sup>2</sup>IT has always propagated 'Innovation and
+                                Leadership' as its mantra to bring about ground-breaking ideas and provide a rock-solid
+                                foundation for learning.
+                            </p>
+                            <p class="venue-text">
+                                With the vision and mission of providing quality education, the Institute is constructed
+                                by world-renowned architects with its uniquely designed dome as its temple of learning.
+                            </p>
+                            <div class="venue-links">
+                                <a href="https://www.isquareit.edu.in/" target="_blank" rel="noopener noreferrer"
+                                    class="venue-link-btn">Visit I<sup>2</sup>IT Website</a>
+                                <a href="https://ieeexplore.ieee.org/xpl/conhome/7871261/proceeding" target="_blank"
+                                    rel="noopener noreferrer" class="venue-link-btn">Past IEEE Conferences at
+                                    I<sup>2</sup>IT</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Call for Papers Page -->
+        <div id="call-for-papers" class="page">
+            <!-- Marquee Bar -->
+            <div class="marquee-bar">
+                <div class="marquee-content">
+                    <a href="#">🎯 Early Bird Registration Open - Save 30%</a>
+                    <a href="#">📝 Paper Submission Deadline: 31<sup>st</sup> December 2025</a>
+                    <a href="#">🏆 Best Paper Awards Available</a>
+                    <a href="#">🌟 Keynote Speakers Announced</a>
+                    <a href="#">📅 Workshop Registration Now Open</a>
+                    <a href="#">🎯 Early Bird Registration Open - Save 30%</a>
+                    <a href="#">📝 Paper Submission Deadline: 31<sup>st</sup> December 2025</a>
+                    <a href="#">🏆 Best Paper Awards Available</a>
+                    <a href="#">🌟 Keynote Speakers Announced</a>
+                    <a href="#">📅 Workshop Registration Now Open</a>
+                </div>
+            </div>
+
+            <div class="call-for-papers-container">
+                <!-- Hero Section -->
+                <section class="cfp-hero">
+                    <div class="cfp-hero-content">
+                        <h1 class="cfp-hero-title">Call for Papers</h1>
+                        <h2 class="cfp-conference-title">2<sup>nd</sup> IEEE International Conference on Information,
+                            Implementation and Innovation in Technology</h2>
+                        <p class="cfp-hero-subtitle">IEEE I<sup>2</sup>ITCON2026 • July 9<sup>th</sup>-11<sup>th</sup>,
+                            2026 • Pune, India</p>
+                        <div class="cfp-theme">
+                            <span class="theme-label">Conference Theme:</span>
+                            <span class="theme-text">"Information, Implementation and Innovation in Technology"</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Conference Overview -->
+                <section class="cfp-overview">
+                    <div class="cfp-content-wrapper">
+                        <h2>Conference Overview</h2>
+                        <p>The theme of IEEE I2ITCON2026 being 'Information, Implementation and Innovation in
+                            Technology' includes all aspects of Information, Implementation and Technological
+                            Innovations to bring together Researchers, Engineers, and practitioners. It encompasses wide
+                            and diverse topics of applications in the fields of Science, Engineering, Technology, and
+                            Management.</p>
+                        <p>IEEE I2ITCON2026 aims to identify and explore the issues, opportunities, and solutions to
+                            various problems in society, environment, and industry using cutting-edge techniques of
+                            Science and Technology by bringing together researchers from Academia and Industry, under a
+                            unique forum.</p>
+                    </div>
+                </section>
+
+                <!-- Submission Guidelines -->
+                <section class="cfp-guidelines">
+                    <div class="cfp-content-wrapper">
+                        <h2>Submission Guidelines</h2>
+                        <div class="guidelines-grid">
+                            <div class="guideline-card">
+                                <div class="guideline-icon">📄</div>
+                                <h3>Paper Template</h3>
+                                <p>All submissions must use the official IEEE conference template</p>
+                                <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank"
+                                    rel="noopener noreferrer" class="guideline-link">Download Template</a>
+                            </div>
+                            <div class="guideline-card">
+                                <div class="guideline-icon">📤</div>
+                                <h3>Paper Submission</h3>
+                                <p>Submit your papers through our online submission system</p>
+                                <a href="#" class="guideline-link">Submit Paper</a>
+                            </div>
+                            <div class="guideline-card">
+                                <div class="guideline-icon">✅</div>
+                                <h3>Review Process</h3>
+                                <p>All papers undergo rigorous peer-review process</p>
+                                <a href="#" class="guideline-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Topics of Interest -->
+                <section class="cfp-topics">
+                    <div class="cfp-content-wrapper">
+                        <h2>Topics of Interest</h2>
+                        <p class="topics-intro">Topics of interest for submission include, but are not limited to the
+                            following:</p>
+                        <div class="tracks-container">
+                            <div class="track-card">
+                                <h3 class="track-title">Track 1 – Artificial Intelligence and Applications</h3>
+                                <ul class="topics-list">
+                                    <li class="topic-item">Assistive Well-Being</li>
+                                    <li class="topic-item">Immersive Technology</li>
+                                    <li class="topic-item">Brain-Computer Interface</li>
+                                    <li class="topic-item">ANN and Evolutionary Algorithms</li>
+                                    <li class="topic-item">Computer Vision</li>
+                                    <li class="topic-item">Natural Language Processing</li>
+                                    <li class="topic-item">AI Ethics</li>
+                                    <li class="topic-item">Open AI</li>
+                                </ul>
+                            </div>
+
+                            <div class="track-card">
+                                <h3 class="track-title">Track 2 – Data Science</h3>
+                                <ul class="topics-list">
+                                    <li class="topic-item">Information Visualization and Predictive Analysis</li>
+                                    <li class="topic-item">Role of Data Analytics in Holistic Education</li>
+                                    <li class="topic-item">Data Analytics in Banking and Business</li>
+                                    <li class="topic-item">Data Analytics for Smart Cities</li>
+                                    <li class="topic-item">Nature-Inspired Computing</li>
+                                    <li class="topic-item">Optimization techniques</li>
+                                    <li class="topic-item">Geoinformatics</li>
+                                    <li class="topic-item">Data-Driven Society</li>
+                                    <li class="topic-item">Blockchain and Data Mining</li>
+                                </ul>
+                            </div>
+
+                            <div class="track-card">
+                                <h3 class="track-title">Track 3 – Communication and Signal Processing</h3>
+                                <ul class="topics-list">
+                                    <li class="topic-item">Mobile and Wireless Networks</li>
+                                    <li class="topic-item">Microwave Communication</li>
+                                    <li class="topic-item">Ad-hoc and Sensor Networks</li>
+                                    <li class="topic-item">Cognitive Radio</li>
+                                    <li class="topic-item">Privacy and Security of Communication Networks</li>
+                                    <li class="topic-item">5G Technology</li>
+                                    <li class="topic-item">EMI and Compatibility</li>
+                                    <li class="topic-item">Music, Speech and Audio Processing</li>
+                                    <li class="topic-item">Image and Video Processing</li>
+                                </ul>
+                            </div>
+
+                            <div class="track-card">
+                                <h3 class="track-title">Track 4 – Internet of Things and Robotics</h3>
+                                <ul class="topics-list">
+                                    <li class="topic-item">IoT for Affordable Agriculture</li>
+                                    <li class="topic-item">Low Power IoT Solutions</li>
+                                    <li class="topic-item">Visual Personal Assistance</li>
+                                    <li class="topic-item">Robotics in Healthcare, Defense, Space Technology</li>
+                                    <li class="topic-item">Wearable Electronics</li>
+                                    <li class="topic-item">IoT Security & Privacy</li>
+                                    <li class="topic-item">Human-Robot Teaming and Co-Bots</li>
+                                    <li class="topic-item">Drone Technology</li>
+                                </ul>
+                            </div>
+
+                            <div class="track-card">
+                                <h3 class="track-title">Track 5 – Sustainable Technological Innovations</h3>
+                                <ul class="topics-list">
+                                    <li class="topic-item">Digitally Enabled Innovation</li>
+                                    <li class="topic-item">Innovation & Technology Management</li>
+                                    <li class="topic-item">Human-Computer Interaction</li>
+                                    <li class="topic-item">Pervasive Computing</li>
+                                    <li class="topic-item">Virtual Reality, Augmented Reality, Mixed Reality</li>
+                                    <li class="topic-item">Automotive Electronics</li>
+                                    <li class="topic-item">Innovation in Material Sciences</li>
+                                    <li class="topic-item">Cloud Technologies and Edge Computing</li>
+                                </ul>
+                            </div>
+
+                            <div class="track-card track-coming-soon">
+                                <h3 class="track-title">Track 6 – Coming Soon</h3>
+                                <p class="coming-soon-text">Additional track details will be announced shortly. Stay
+                                    tuned for updates!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Important Dates -->
+                <section class="cfp-dates">
+                    <div class="cfp-content-wrapper">
+                        <h2>Important Dates</h2>
+                        <div class="dates-grid">
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Paper Submission Opening</h3>
+                                    <p>September 2025</p>
+                                </div>
+                            </div>
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Submission Deadline</h3>
+                                    <p>31<sup>st</sup> December 2025</p>
+                                </div>
+                            </div>
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Acceptance Notification</h3>
+                                    <p>27<sup>th</sup> February 2026</p>
+                                </div>
+                            </div>
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Early Bird Registration Deadline</h3>
+                                    <p>31<sup>st</sup> May 2026</p>
+                                </div>
+                            </div>
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Camera-ready paper submission</h3>
+                                    <p>15<sup>th</sup> June 2026</p>
+                                </div>
+                            </div>
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Registration Deadline</h3>
+                                    <p>10<sup>th</sup> June 2026</p>
+                                </div>
+                            </div>
+                            <div class="date-card">
+                                <div class="date-icon">📅</div>
+                                <div class="date-content">
+                                    <h3>Conference Dates</h3>
+                                    <p>9<sup>th</sup> to 11<sup>th</sup> July 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dates-note">
+                            <p><strong>Note:</strong> All dates are subject to change. Please check this page regularly
+                                for updates.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Information -->
+                <section class="cfp-contact">
+                    <div class="cfp-content-wrapper">
+                        <h2>Contact Information</h2>
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-content">
+                                <h3>For any queries, please contact:</h3>
+                                <p>Conference Organizing Committee</p>
+                                <a href="mailto:conference@i2itcon2026.org"
+                                    class="contact-email">conference@i2itcon2026.org</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="cfp-cta">
+                    <div class="cfp-content-wrapper">
+                        <div class="cta-content">
+                            <h2>Ready to Submit Your Research?</h2>
+                            <p>Join leading researchers and industry experts at IEEE I2ITCON2026</p>
+                            <div class="cta-buttons">
+                                <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank"
+                                    rel="noopener noreferrer" class="cta-button secondary">Download Template</a>
+                                <a href="#" class="cta-button primary">Submit Your Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+                <a href="#sitemap">Sitemap</a>
+            </div>
+            <p>&copy; 2025 IEEE I<sup>2</sup>ITCON2026 Conference. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Designed & Developed by WebMaster Team, I<sup>2</sup>IT
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
