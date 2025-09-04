@@ -1,3 +1,4 @@
+/* Call for Papers Styles with Professional Blue Theme */
 .call-for-papers-container {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: #f8fafc;
@@ -6,7 +7,7 @@
 
 /* Hero Section */
 .cfp-hero {
-  background: linear-gradient(135deg, rgba(30, 64, 175, 0.95), rgba(59, 130, 246, 0.9)),
+  background: linear-gradient(135deg, rgba(0, 77, 153, 0.95), rgba(0, 102, 204, 0.9)),
               url("https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
   background-size: cover;
   background-position: center;
@@ -24,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 64, 175, 0.1);
+  background: rgba(0, 77, 153, 0.1);
   z-index: 1;
 }
 
@@ -72,7 +73,7 @@
 .theme-label {
   font-weight: 600;
   margin-right: 0.5rem;
-  color: #bfdbfe;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
 }
 
@@ -96,7 +97,7 @@
 
 .cfp-overview h2 {
   font-size: 3rem;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 800;
@@ -111,7 +112,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   border-radius: 2px;
 }
 
@@ -131,7 +132,7 @@
 
 .cfp-guidelines h2 {
   font-size: 3rem;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 800;
@@ -146,7 +147,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   border-radius: 2px;
 }
 
@@ -162,7 +163,7 @@
   padding: 2.5rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 77, 153, 0.08);
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
   position: relative;
@@ -176,7 +177,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(30, 64, 175, 0.03), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 77, 153, 0.03), transparent);
   transition: left 0.6s ease;
 }
 
@@ -186,7 +187,7 @@
 
 .guideline-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 77, 153, 0.12);
 }
 
 .guideline-icon {
@@ -196,7 +197,7 @@
 
 .guideline-card h3 {
   font-size: 1.5rem;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   margin-bottom: 1rem;
   font-weight: 700;
 }
@@ -208,7 +209,7 @@
 }
 
 .guideline-link {
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   color: white;
   padding: 12px 28px;
   text-decoration: none;
@@ -216,13 +217,13 @@
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-block;
-  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 77, 153, 0.3);
 }
 
 .guideline-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
-  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  box-shadow: 0 8px 25px rgba(0, 77, 153, 0.4);
+  background: linear-gradient(135deg, rgba(0, 64, 128, 1), rgba(0, 89, 178, 1));
 }
 
 /* Topics Section */
@@ -233,7 +234,7 @@
 
 .cfp-topics h2 {
   font-size: 3rem;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 800;
@@ -248,7 +249,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   border-radius: 2px;
 }
 
@@ -273,20 +274,20 @@
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   padding: 2.5rem;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 77, 153, 0.06);
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid rgba(0, 102, 204, 1);
 }
 
 .track-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(30, 64, 175, 0.1);
-  border-left-color: #1e40af;
+  box-shadow: 0 15px 35px rgba(0, 77, 153, 0.1);
+  border-left-color: rgba(0, 77, 153, 1);
 }
 
 .track-title {
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -300,7 +301,7 @@
   left: 0;
   width: 60px;
   height: 3px;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   border-radius: 2px;
 }
 
@@ -313,7 +314,7 @@
   padding: 0.8rem 0;
   color: #475569;
   font-size: 1rem;
-  border-bottom: 1px solid rgba(30, 64, 175, 0.1);
+  border-bottom: 1px solid rgba(0, 77, 153, 0.1);
   position: relative;
   padding-left: 1.5rem;
   transition: all 0.3s ease;
@@ -323,18 +324,18 @@
   content: '▸';
   position: absolute;
   left: 0;
-  color: #3b82f6;
+  color: rgba(0, 102, 204, 1);
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .topic-item:hover {
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   padding-left: 2rem;
 }
 
 .topic-item:hover::before {
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   transform: scale(1.2);
 }
 
@@ -343,8 +344,8 @@
 }
 
 .track-coming-soon {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(30, 64, 175, 0.05));
-  border-left-color: #fbbf24;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 77, 153, 0.05));
+  border-left-color: rgba(0, 128, 255, 1);
   text-align: center;
 }
 
@@ -363,7 +364,7 @@
 
 .cfp-dates h2 {
   font-size: 3rem;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 800;
@@ -378,7 +379,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   border-radius: 2px;
 }
 
@@ -395,26 +396,26 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.06);
+  box-shadow: 0 6px 20px rgba(0, 77, 153, 0.06);
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid rgba(0, 102, 204, 1);
 }
 
 .date-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(30, 64, 175, 0.1);
-  border-left-color: #1e40af;
+  box-shadow: 0 12px 30px rgba(0, 77, 153, 0.1);
+  border-left-color: rgba(0, 77, 153, 1);
 }
 
 .date-icon {
   font-size: 2rem;
-  color: #3b82f6;
+  color: rgba(0, 102, 204, 1);
   flex-shrink: 0;
 }
 
 .date-content h3 {
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -427,15 +428,15 @@
 }
 
 .dates-note {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(0, 102, 204, 0.1);
   padding: 1.5rem;
   border-radius: 12px;
   margin-top: 2rem;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid rgba(0, 102, 204, 1);
 }
 
 .dates-note p {
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   margin: 0;
   text-align: center;
   font-size: 1rem;
@@ -449,7 +450,7 @@
 
 .cfp-contact h2 {
   font-size: 3rem;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 800;
@@ -464,7 +465,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   border-radius: 2px;
 }
 
@@ -475,18 +476,18 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 77, 153, 0.08);
   border: 1px solid #e2e8f0;
 }
 
 .contact-icon {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  color: #3b82f6;
+  color: rgba(0, 102, 204, 1);
 }
 
 .contact-content h3 {
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -499,7 +500,7 @@
 }
 
 .contact-email {
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   color: white;
   padding: 12px 28px;
   text-decoration: none;
@@ -507,20 +508,20 @@
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-block;
-  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 77, 153, 0.3);
   font-size: 1.1rem;
 }
 
 .contact-email:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
-  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  box-shadow: 0 8px 25px rgba(0, 77, 153, 0.4);
+  background: linear-gradient(135deg, rgba(0, 64, 128, 1), rgba(0, 89, 178, 1));
 }
 
 /* CTA Section */
 .cfp-cta {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, rgba(0, 77, 153, 1), rgba(0, 102, 204, 1));
   color: white;
   text-align: center;
 }
@@ -562,7 +563,7 @@
 
 .cta-button.primary {
   background: white;
-  color: #1e40af;
+  color: rgba(0, 77, 153, 1);
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
