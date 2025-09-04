@@ -1,18 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import ieeeLogo from '../assets/ieee.png'; // Ensure the path is correct
 
 const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo-container">
+        <div className="logo-section">
           <img 
-            src={ieeeLogo}
+            src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
             alt="IEEE Logo" 
             className="logo"
           />
-     
+          <span className="logo-text">IEEE</span>
         </div>
         <nav>
           <ul className="nav-list">

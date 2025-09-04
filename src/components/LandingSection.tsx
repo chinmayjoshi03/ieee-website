@@ -32,14 +32,10 @@ const LandingSection: React.FC = () => {
     <>
       <div className="landing-section-upper">
         <h1>
-          2nd IEEE International Conference on Information, Implementation and
-          Innovation in Technology
+          Advancing Technology • Fostering Innovation • Building Tomorrow
         </h1>
         <p className="conference-subtitle">
-          Advancing Technology • Fostering Innovation • Building Tomorrow
-        </p>
-        <p className="conference-subtitle" style={{ fontSize: '1.2rem', marginBottom: '3rem', fontWeight: '500' }}>
-          July 10-11, 2026 | Pune, India
+          Join leading researchers and industry experts for cutting-edge presentations and networking
         </p>
         <a href="#about" className="cta-button">
           Register Now
@@ -53,7 +49,7 @@ const LandingSection: React.FC = () => {
             10th & 11th July 2026
           </div>
           <p style={{ fontSize: '1.2rem', marginTop: '1.5rem', opacity: 0.9, fontWeight: '400' }}>
-            Join leading researchers and industry experts for two days of cutting-edge presentations and networking
+            Two days of cutting-edge research presentations, workshops, and networking opportunities
           </p>
         </div>
         <div className="countdown">

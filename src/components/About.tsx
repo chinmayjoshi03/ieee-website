@@ -37,17 +37,6 @@ const ImportantDatesGrid: React.FC = () => {
             <p>2nd International Conference on Control Communication, Computing & Automation 2025</p>
             <a href="#">Read More</a>
           </div>
-
-          <div className="section">
-            <h2>Conference General Chair</h2>
-            <div className="chair-section">
-              <img src="https://media.licdn.com/dms/image/v2/D4D03AQEW30z4HJEynQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715238003999?e=1759363200&v=beta&t=M0CUGnwUMm2GrM_YlU5aeOaBRchF3VFfyXCQdmBr-YY" alt="Conference General Chair" />
-              <div>
-                <p> <strong>Dr. Deptii Chaudhari</strong> Rapid advancements in communication, control, and computing automation are driving a paradigm shift toward <strong>smart living</strong>—encompassing smart cities, intelligent transportation, automated homes, and sustainable industries.</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="right-panel">

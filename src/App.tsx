@@ -6,6 +6,7 @@ import LandingSection from "./components/LandingSection";
 import Footer from "./components/Footer";
 import MarqueeBar from "./components/MarqueeBar";
 import About from "./components/About";
+import ConferenceTitleBanner from "./components/ConferenceTitleBanner";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import AboutUs from "./Pages/AboutUs";
@@ -22,6 +23,7 @@ const App = () => {
           element: (
             <>
               <MarqueeBar />
+              <ConferenceTitleBanner />
               <LandingSection />
               <About />
             </>
@@ -32,6 +34,7 @@ const App = () => {
           element: (
             <>
               <MarqueeBar />
+              <ConferenceTitleBanner />
               <AboutUs />
             </>
           ) 
@@ -41,6 +44,7 @@ const App = () => {
           element: (
             <>
               <MarqueeBar />
+              <ConferenceTitleBanner />
               <CallForPapers />
             </>
           ) 
