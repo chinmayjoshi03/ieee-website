@@ -36,23 +36,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <section className="chair-section">
-        <img
-          src="https://media.licdn.com/dms/image/v2/D4D03AQEW30z4HJEynQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715238003999?e=1759363200&v=beta&t=M0CUGnwUMm2GrM_YlU5aeOaBRchF3VFfyXCQdmBr-YY"
-          alt="Conference General Chair"
-        />
-        <div className="chair-details">
-          <h3 className="chair-details-h3">Dr. Deptii Chaudhari</h3>
-          <p className="chair-details-p">
-            Dr. Chaudhari is a distinguished expert in the field and the General
-            Chair for the IEEE I2ITCON2026. Her research focuses on the
-            intersection of communication, control, and computing automation,
-            with a strong emphasis on their societal impact. She is a strong
-            advocate for developing technologies that lead to a more sustainable
-            and connected future.
-          </p>
-        </div>
-      </section>
+      
     </div>
   );
 };

@@ -38,17 +38,10 @@ const ImportantDatesGrid: React.FC = () => {
             <a href="#">Read More</a>
           </div>
 
-          <div className="section">
-            <h2>Conference General Chair</h2>
-            <div className="chair-section">
-              <img src="https://media.licdn.com/dms/image/v2/D4D03AQEW30z4HJEynQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715238003999?e=1759363200&v=beta&t=M0CUGnwUMm2GrM_YlU5aeOaBRchF3VFfyXCQdmBr-YY" alt="Conference General Chair" />
-              <div>
-                <p> <strong>Dr. Deptii Chaudhari</strong> Rapid advancements in communication, control, and computing automation are driving a paradigm shift toward <strong>smart living</strong>—encompassing smart cities, intelligent transportation, automated homes, and sustainable industries.</p>
-                <a href="#">Read More</a>
-              </div>
+         
             </div>
           </div>
-        </div>
+       
 
         <div className="right-panel">
           <h2>IMPORTANT DATES</h2>
@@ -57,7 +50,7 @@ const ImportantDatesGrid: React.FC = () => {
           <DateItem month="July" day="10" date="10th July 2026" event="Registration and Payment" />
           <DateItem month="July" day="31" date="31st July 2026" event="Last date of Registration and Payment" />
         </div>
-      </div>
+     
     </>
   );
 };
