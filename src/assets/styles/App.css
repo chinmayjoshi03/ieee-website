@@ -148,7 +148,7 @@ body {
 
 /* MarqueeBar */
 .marquee-bar {
-  background: linear-gradient(135deg, #dc2626, #ef4444);
+  background: #f9f7f7;
   color: white;
   padding: 12px 0;
   overflow: hidden;
@@ -165,7 +165,7 @@ body {
 
 .marquee-content a {
   margin: 0 40px;
-  color: white;
+  color: rgb(4, 4, 4);
   text-decoration: none;
   padding: 6px 16px;
   border-radius: 20px;
